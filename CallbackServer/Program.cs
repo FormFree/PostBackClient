@@ -13,7 +13,7 @@ namespace CallbackServer
     {
         static void Main(string[] args)
         {
-            // The below line says that the self-hosting configuration is contained
+            // The line below says that the self-hosting configuration is contained
             // within this class. You may want to seperate that out.
             using (var app = WebApp.Start<Program>("http://localhost:8080"))
             {

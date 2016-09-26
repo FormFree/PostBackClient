@@ -7,17 +7,17 @@ As of this writing of this example there is only one webhook. It will callback t
 the following HTTP POST parameters:
 
 1. VOD_ID
-   * This is the id of the VodRequest that the webhook is reporting about. This is a `Guid` value is always provided.
+   * This is the id of the VodRequest that the webhook is reporting about. This is a `Guid` value and is always provided.
 2. OrderStatus
    * This is the status of the VodRequest. It is an `int` value in C# and is always provided.
 3. ReportID
    * This is a optional report id that is provided if the webhook is calling back about a report generation. In the event
-   the value exists it is a `Guid`.
+   the value exists, it is a `Guid`.
 
 ### No Self-Hosting
 
 You may not want to self-host in such a case you will only be interested in the `CallbackServer/Controller/CallbackController.cs` file.
-It contains the definition of 1) a WebAPI controller method to handle the post, and 2) the a model class describing the
+It contains the definition of 1) a WebAPI controller method to handle the post, and 2) a model class describing the
 post body.
 
 ### Self-Hosting

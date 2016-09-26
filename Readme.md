@@ -16,13 +16,13 @@ the following HTTP POST parameters:
 
 ### No Self-Hosting
 
-You may not want to self-host in such a case you will only be interested in the CallbackServer/Controller/CallbackController.cs file.
+You may not want to self-host in such a case you will only be interested in the `CallbackServer/Controller/CallbackController.cs` file.
 It contains the definition of 1) a WebAPI controller method to handle the post, and 2) the a model class describing the
 post body.
 
 ### Self-Hosting
 
 If you are interested in self-hosting (i.e. having a console application with an embedded web server), you can look at
-the following Microsoft provided [documentation](1). The CallbackServer/Program.cs contains a basic HTTP setup.
+the following Microsoft provided [documentation](1). The `CallbackServer/Program.cs` contains a basic HTTP setup.
 
 [1]: http://www.asp.net/web-api/overview/hosting-aspnet-web-api/use-owin-to-self-host-web-api
